@@ -1,4 +1,5 @@
 Technical Writing
+
 A README file is an essential document that provides users with information about a software project, a library, or any other type of project that needs explanation. The README file is usually written in a plain text format, such as Markdown or reStructuredText, although ASCII text is also common.
 
 **Syntax and Structure:**

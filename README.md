@@ -12,19 +12,31 @@ A README file is an essential document that provides users with information abou
     ```
 
 ```text
-System
-└─ UI (Frontend)
-   └─ Backend (API)
-      ├─ Core Services
-      │  ├─ Users
-      │  ├─ Timetables
-      │  ├─ Attendance
-      │  └─ Performance
-      ├─ AI Query Engine
-      ├─ Auth & Security
-      ├─ Database
-      └─ Deployment & Ops
+                  +----------------------+
+                  |   User Interface     |
+                  |      (Frontend)      |
+                  +----------+-----------+
+                             |
+                             v
+                  +----------------------+
+                  | Application Logic    |
+                  |      (Backend)       |
+                  +----------+-----------+
+                             |
+      +----------------------+-----------------------+
+      |                      |                       |
+      v                      v                       v
++-------------+     +------------------+     +----------------------+
+|   Database  |     | AI Query Engine  |     | Authentication &     |
+|    Layer    |     |  (NLP + Reports) |     |     Security         |
++-------------+     +------------------+     +----------------------+
 
+                             |
+                             v
+                  +----------------------+
+                  | Deployment &         |
+                  | Infrastructure       |
+                  +----------------------+
 
 3. **Project Description:**
     Provide a brief description of what the project is about, what problem it solves, or its purpose.
